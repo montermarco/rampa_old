@@ -4,7 +4,7 @@ const HTMLwebpackplugin = require('html-webpack-plugin');
 module.exports = {
   entry: path.join(__dirname, './index.js'),
   output: {
-    filename: 'bundle.js',
+    filename: 'sgb-front.bundle.js',
     path: path.resolve(__dirname, './build')
   },
   module: {
