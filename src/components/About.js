@@ -9,8 +9,9 @@ const About = () => {
         <Wrapper>
           <h3>ABOUT</h3>
           <p>
-            Determined and productive motion creator & designer with passion for creative art. I’m interested to learn additional skills,
-            tecnics and technologies. My goal is to work with others industry leaders in a friendly environment allowing me to expand on my existing skill set.
+            A Determined and curious motion creator & designer with passion for creative art. I’m committed to acquire additional skills, learn 
+            versatile tecnics and new technologies. Currently experimenting with generative graphics and interactive design, my goal is to work with others 
+            industry leaders in a friendly environment allowing me to expand on my existing skill set.
           </p>
           <TopButton />
         </Wrapper>

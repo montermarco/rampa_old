@@ -1,17 +1,16 @@
 import React from 'react';
-import Proyect from '../layout/Proyect';
 import {proyects} from '../../assets/utils/proyects';
 import { v4 as uuidv4 } from 'uuid';
+import Proyect from '../layout/Proyect';
 
-
-const Graphic = () => {
-
-  const graphics = proyects.filter( proyect => proyect.category === "graphic");
+const Collaborations = () => {
+  
+  const collaborations = proyects.filter( proyect => proyect.category === "collaboration");
   
   return (
     <>
       {
-        graphics.map( proyect => (
+        collaborations.map( proyect => (
           <Proyect
             key={uuidv4()}
             header={proyect.header}
@@ -25,4 +24,4 @@ const Graphic = () => {
   )
 };
 
-export default Graphic;
+export default Collaborations;

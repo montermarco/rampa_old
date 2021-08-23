@@ -1,24 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
+import {proyects} from '../../assets/utils/proyects';
+import { v4 as uuidv4 } from 'uuid';
+import Proyect from '../layout/Proyect';
 
 const Generative = () => {
+
+  const generatives = proyects.filter( proyect => proyect.category === "generative");
+
   return (
-    <Wrapper>
-      <p>Generative</p>
-    </Wrapper>
+    <>
+      {
+        generatives.map( proyect => (
+          <Proyect
+            key={uuidv4()}
+            header={proyect.header}
+            title={proyect.title}
+            description={proyect.description}
+            assets={proyect.assets}
+          />
+        ))
+      }
+    </>
   )
-}
+};
 
-const Wrapper = styled.div`
-  margin: 0 auto;
-  width: 90%;
-  border: solid red .5px;
-
-  p{
-    font-size: 2rem;
-    color: red;
-    margin-left: 2rem;
-  }
-`;
 
 export default Generative;
